@@ -11,7 +11,7 @@ function addNewName() {
     newName.value=nameField.value;
     listOfNames.appendChild(newName);
     listOfNames.value=nameField.value;
-    sendMessage('ADD_NAME', nameField);
+    sendMessage('ADD_NAME', nameField.value);
     nameField.value='';
 }
 function add() {
