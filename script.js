@@ -1,7 +1,6 @@
 const listOfNames = document.getElementById("names");
 const nameField = document.getElementById("nameField");
 const bc =  new BroadcastChannel('remote_page');
-window.open("leaderboard.html","_blank");
 function sendMessage(cmd, value) {
      bc.postMessage({type:cmd, payload:value});
 }
